@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(DeafeningBlast());
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+            DefeaningBlast();
     }
 
     private IEnumerator DeafeningBlast()
@@ -30,6 +33,14 @@ public class PlayerController : MonoBehaviour
             var rot = Quaternion.Euler(0, -angle + 90 + shootPoint.eulerAngles.y, 0);
             Instantiate(projectile, pos, rot);
             yield return new WaitForSeconds(shootDelay);
+        }
+    }
+
+    private void DefeaningBlast()
+    {
+        for (int i = -2; i < 3; i++)
+        {
+            Instantiate(projectile, shootPoint.position+shootPoint.right*i, shootPoint.rotation);
         }
     }
 }

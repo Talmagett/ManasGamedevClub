@@ -292,6 +292,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95787105524477528, guid: 2f3e27eecb190e44a9af50723c394274, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b0bfbbf2f9fd5be48ad7df6997020e15, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -490,9 +494,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 4872453224147687388, guid: 0e79388db3f12974dac6a4be4ad2ab7e, type: 3}
   shootPoint: {fileID: 534498758}
-  shootDelay: -0.1
+  shootDelay: 0.03
   radius: 2
-  maxProjectiles: 32
+  maxProjectiles: 16
 --- !u!1 &1750688124
 GameObject:
   m_ObjectHideFlags: 0
