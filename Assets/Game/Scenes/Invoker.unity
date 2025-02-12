@@ -302,6 +302,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4580766925885248, guid: 2f3e27eecb190e44a9af50723c394274, type: 3}
   m_PrefabInstance: {fileID: 205694252}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &534498757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 534498758}
+  m_Layer: 0
+  m_Name: shootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &534498758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534498757}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 962975593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705395497
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +473,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 205694253}
+  - {fileID: 534498758}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &962975594
@@ -456,6 +488,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74beec92024809a479ce8d6196687f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 4872453224147687388, guid: 0e79388db3f12974dac6a4be4ad2ab7e, type: 3}
+  shootPoint: {fileID: 534498758}
+  shootDelay: -0.1
+  radius: 2
+  maxProjectiles: 32
 --- !u!1 &1750688124
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,7 +580,7 @@ Transform:
   m_GameObject: {fileID: 1750688124}
   serializedVersion: 2
   m_LocalRotation: {x: 0.4674655, y: -0, z: -0, w: 0.8840113}
-  m_LocalPosition: {x: 0, y: 8.18, z: -5.18}
+  m_LocalPosition: {x: 0, y: 10, z: -6.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
